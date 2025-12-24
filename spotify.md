@@ -28,15 +28,17 @@ const scrollInterval = setInterval(() => {
 
 // Hentikan setelah 30 detik
 setTimeout(() => {
-  clearInterval(scrollInterval);
-  observer.disconnect();
-  console.log("SELESAI");
-  console.log([...songs]);
+    clearInterval(scrollInterval);
+    observer.disconnect();
+    console.log("SELESAI");
+    console.log([...songs]);
+
+    text = "";
+
+    songs.forEach(song => {
+    text += song + "\n";
+    });
+
+    console.log(songs);
 }, 30000);
-
-text = "";
-
-songs.forEach(song => {
-  text += song + "\n";
-});
 ```
