@@ -33,4 +33,10 @@ setTimeout(() => {
   console.log("SELESAI");
   console.log([...songs]);
 }, 30000);
+
+text = "";
+
+songs.forEach(song => {
+  text += song + "\n";
+});
 ```
